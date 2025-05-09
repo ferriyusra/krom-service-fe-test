@@ -81,12 +81,12 @@ const LandingPageLayoutNavbar = () => {
               <Link href="/auth/login" className="text-teal-600 hover:font-semibold">Login</Link>
             </NavbarItem>
             <NavbarItem>
-              <Link
+              {/* <Link
                 href="/auth/register"
                 className="bg-teal-600 text-white rounded-full px-4 py-2 hover:underline font-semibold"
               >
                 Register
-              </Link>
+              </Link> */}
             </NavbarItem>
           </>
         )}
@@ -130,14 +130,14 @@ const LandingPageLayoutNavbar = () => {
             <NavbarMenuItem>
               <Link href="/auth/login" className="text-teal-600 py-2 block">Login</Link>
             </NavbarMenuItem>
-            <NavbarMenuItem>
+            {/* <NavbarMenuItem>
               <Link
                 href="/auth/register"
                 className="bg-teal-600 text-white text-center py-3 rounded-full block font-semibold"
               >
                 Register
               </Link>
-            </NavbarMenuItem>
+            </NavbarMenuItem> */}
           </>
         )}
       </NavbarMenu>

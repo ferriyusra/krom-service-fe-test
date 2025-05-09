@@ -35,12 +35,9 @@ const Login = () => {
       <Card>
         <CardBody className="p-8">
           <h2 className="text-2xl font-bold text-teal-600">Login</h2>
-          <p className="mb-4 mt-2 text-small">
-            Don't have account?&nbsp;
-            <Link href="/" className="font-semibold text-teal-400">
-              Register Here!
-            </Link>
-          </p>
+          <div className="mb-4 mt-2 text-small">
+            Please Login Here!&nbsp;
+          </div>
           {
             errors.root && (
               <p className="mb-2 font-medium text-danger">
@@ -56,7 +53,7 @@ const Login = () => {
                 <Input
                   {...field}
                   type="text"
-                  label="Nama Pengguna / Email"
+                  label="Email or Username"
                   autoComplete="off"
                   variant="bordered"
                   isInvalid={errors.identifier !== undefined}
@@ -71,7 +68,7 @@ const Login = () => {
                 <Input
                   {...field}
                   type={isVisible ? "text" : "password"}
-                  label="Kata Sandi"
+                  label="Password"
                   autoComplete="off"
                   variant="bordered"
                   isInvalid={errors.password !== undefined}

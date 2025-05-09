@@ -9,7 +9,7 @@ import { signIn } from "next-auth/react";
 import { ToasterContext } from "@/contexts/ToasterContext";
 
 const loginSchema = yup.object().shape({
-  identifier: yup.string().required("Please fill full name or email"),
+  identifier: yup.string().required("Please fill username or email"),
   password: yup
     .string()
     .required("Please fill password"),
