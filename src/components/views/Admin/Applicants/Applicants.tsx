@@ -101,7 +101,7 @@ const Applicants = () => {
           columns={COLUMN_LISTS_APPLICANTS}
           onClickButtonTopContent={add.onOpen}
           buttonTopContentLabel="Add Aplication"
-          emptyContent='Assignment is empty'
+          emptyContent='Applicants is empty'
           renderCell={renderCell}
           totalPages={Math.ceil(
             dataApplicants?.pagination.total /
