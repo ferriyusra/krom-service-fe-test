@@ -65,7 +65,7 @@ const LandingPageLayoutNavbar = () => {
               </DropdownTrigger>
               <DropdownMenu>
                 {isAdmin ? (
-                  <DropdownItem key="teacher-dashboard" href="/admin/">
+                  <DropdownItem key="admin-dashboard" href="/admin/">
                     Dashboard
                   </DropdownItem>
                 ) : null}
