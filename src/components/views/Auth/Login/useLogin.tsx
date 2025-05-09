@@ -21,7 +21,7 @@ const useLogin = () => {
   const toggleVisibility = () => setIsVisible(!isVisible);
   const { setToaster } = useContext(ToasterContext);
 
-  const callbackUrl: string = (router.query.callbackUrl as string) || "/admin/assignment";
+  const callbackUrl: string = (router.query.callbackUrl as string) || "/admin/applicants";
 
   const {
     control,

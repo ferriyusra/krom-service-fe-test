@@ -31,7 +31,7 @@ export async function middleware(request: NextRequest) {
 		}
 
 		if (pathname === '/admin') {
-			return NextResponse.redirect(new URL('/admin/assignment', request.url));
+			return NextResponse.redirect(new URL('/admin/applicants', request.url));
 		}
 	}
 }
